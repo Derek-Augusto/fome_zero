@@ -125,7 +125,7 @@ df=df.loc[df['Cuisines'] != 'Others']
 #==============================
 
 #===Header========
-st.header('Página Principal')
+st.header('Fome Zero')
 
 #=======Barra Lateral===========
 
@@ -149,48 +149,7 @@ country_options = st.sidebar.multiselect(
 line = df['Country_Name'].isin(country_options)
 df = df.loc[line,:]
 
-########### Slicer de restaurantes ################
-st.sidebar.markdown('## Selecione a quantidade de restaurantes que deseja visualizar')
-x = st.sidebar.slider('',min_value=1, max_value=10, value=5)
 
-#============Filtro de Culinaria====================
-st.sidebar.markdown('## Selecione o tipo de Culinária')
-cuisines_opt = st.sidebar.multiselect(
-    '',
-    ['Italian', 'European', 'Filipino', 'American', 'Korean', 'Pizza',
-    'Taiwanese', 'Japanese', 'Coffee', 'Chinese', 'Seafood',
-    'Singaporean', 'Vietnamese', 'Latin American', 'Healthy Food',
-    'Cafe', 'Fast Food', 'Brazilian', 'Argentine', 'Arabian', 'Bakery',
-    'Tex-Mex', 'Bar Food', 'International', 'French', 'Steak',
-    'German', 'Sushi', 'Grill', 'Peruvian', 'North Eastern',
-    'Ice Cream', 'Burger', 'Mexican', 'Vegetarian', 'Contemporary',
-    'Desserts', 'Juices', 'Beverages', 'Spanish', 'Thai', 'Indian',
-    'Mineira', 'BBQ', 'Mongolian', 'Portuguese', 'Greek', 'Asian',
-    'Author', 'Gourmet Fast Food', 'Lebanese', 'Modern Australian',
-    'African', 'Coffee and Tea', 'Australian', 'Middle Eastern',
-    'Malaysian', 'Tapas', 'New American', 'Pub Food', 'Southern',
-    'Diner', 'Donuts', 'Southwestern', 'Sandwich', 'Irish',
-    'Mediterranean', 'Cafe Food', 'Korean BBQ', 'Fusion', 'Canadian',
-    'Breakfast', 'Cajun', 'New Mexican', 'Belgian', 'Cuban', 'Taco',
-    'Caribbean', 'Polish', 'Deli', 'British', 'California', 'Others',
-    'Eastern European', 'Creole', 'Ramen', 'Ukrainian', 'Hawaiian',
-    'Patisserie', 'Yum Cha', 'Pacific Northwest', 'Tea', 'Moroccan',
-    'Burmese', 'Dim Sum', 'Crepes', 'Fish and Chips', 'Russian',
-    'Continental', 'South Indian', 'North Indian', 'Salad',
-    'Finger Food', 'Mandi', 'Turkish', 'Kerala', 'Pakistani',
-    'Biryani', 'Street Food', 'Nepalese', 'Goan', 'Iranian', 'Mughlai',
-    'Rajasthani', 'Mithai', 'Maharashtrian', 'Gujarati', 'Rolls',
-    'Momos', 'Parsi', 'Modern Indian', 'Andhra', 'Tibetan', 'Kebab',
-    'Chettinad', 'Bengali', 'Assamese', 'Naga', 'Hyderabadi', 'Awadhi',
-    'Afghan', 'Lucknowi', 'Charcoal Chicken', 'Mangalorean',
-    'Egyptian', 'Malwani', 'Armenian', 'Roast Chicken', 'Indonesian',
-    'Western', 'Dimsum', 'Sunda', 'Kiwi', 'Asian Fusion', 'Pan Asian',
-    'Balti', 'Scottish', 'Cantonese', 'Sri Lankan', 'Khaleeji',
-    'South African', 'Drinks Only', 'Durban', 'World Cuisine',
-    'Izgara', 'Home-made', 'Giblets', 'Fresh Fish', 'Restaurant Cafe',
-    'Kumpir', 'Döner', 'Turkish Pizza', 'Ottoman', 'Old Turkish Bars',
-    'Kokoreç'],
-    default=['Home-made', 'BBQ','Japanese','Brazilian','Arabian','American','Italian'])
 
 
 #======inicio=========================
