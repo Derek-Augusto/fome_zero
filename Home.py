@@ -125,7 +125,7 @@ df=df.loc[df['Cuisines'] != 'Others']
 #==============================
 
 #===Header========
-st.header(Página Principal')
+st.header('Página Principal')
 
 #=======Barra Lateral===========
 
