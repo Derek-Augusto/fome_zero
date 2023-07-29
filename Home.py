@@ -125,14 +125,14 @@ df=df.loc[df['Cuisines'] != 'Others']
 #==============================
 
 #===Header========
-st.header('Overview - Culinária 🍽️')
+st.header(Página Principal')
 
 #=======Barra Lateral===========
 
 #image_path='/Users/derekaugusto/Desktop/comunidadeDS/Repos/ftc_python/dataset/pages/NewLogo.png'
 
-#image = Image.open('logo.png')
-#st.sidebar.image( image, width=80)
+image = Image.open('logo.png')
+st.sidebar.image( image, width=80)
 
 st.sidebar.markdown('# Fome Zero')
 st.sidebar.markdown('## Encontre seu restaurante favorito conosco')
@@ -191,18 +191,6 @@ cuisines_opt = st.sidebar.multiselect(
     'Kumpir', 'Döner', 'Turkish Pizza', 'Ottoman', 'Old Turkish Bars',
     'Kokoreç'],
     default=['Home-made', 'BBQ','Japanese','Brazilian','Arabian','American','Italian'])
-
-
-
-
-#image_path = '/Users/derekaugusto/Desktop/comunidadeDS/Repos/ftc_python/dataset/'
-image = Image.open('logo.png')
-st.sidebar.image(image,width=120)
-
-
-
-st.sidebar.markdown('# Somos o Fome Zero!')
-st.sidebar.markdown('## O melhor lugar para encontrar o seu mais novo restaurante favorito!')
 
 
 #======inicio=========================
