@@ -201,7 +201,7 @@ with st.container():
 
 with col1:
     df_aux = df['Restaurant ID'].count()
-    col1.metric('# Restaurantes cadastrados',df_aux)
+    col1.metric('Restaurantes cadastrados',df_aux)
 
 with col2:
     df_aux = df.loc[:,'Country_Name'].nunique()
