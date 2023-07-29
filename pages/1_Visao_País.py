@@ -11,7 +11,7 @@ import folium
 st.set_page_config( page_title='Visão País', layout='wide')
 
 # Arquivo para upload
-df = pd.read_csv('dataset/zomato.csv')
+df = pd.read_csv('zomato.csv')
 
 #funções
 #Preenchimento do nome dos paises
